@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">modulo calculator</string>
+    <string name="placeholder_num1">input here</string>
+    <string name="placeholder_num2">input here</string>
+    <string name="sum">0</string>
+    <string name="moduloo">%</string>
+    <!--  button hasil  -->
+    <string name="t_btn_hitung">execute</string>
+</resources>
