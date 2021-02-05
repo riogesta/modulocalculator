@@ -16,9 +16,6 @@ public class MainActivity extends AppCompatActivity {
     EditText edit1, edit2;
     TextView v_sum;
 
-    int sum=0;
-    int satu=0, dua=0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,18 +45,18 @@ public class MainActivity extends AppCompatActivity {
                     is = false;
                 }
 
-                satu = Integer.parseInt(edit1.getText().toString().trim());
-                dua = Integer.parseInt(edit2.getText().toString().trim());
+                int satu = Integer.parseInt(edit1.getText().toString().trim());
+                int dua = Integer.parseInt(edit2.getText().toString().trim());
 
-                sum = satu % dua;
-
-                v_sum.setText(String.valueOf(sum));
+                if(dua != 0){
+                    int sum = satu % dua;
+                    v_sum.setText(String.valueOf(sum));
+                }else{
+                    v_sum.setText("error");
+                }
             }
         });
 
-
-
-
-
     }
+
 }
